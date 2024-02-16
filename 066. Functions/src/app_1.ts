@@ -2,9 +2,9 @@
 // вывести все товары, количество которых больше 10
 
 interface Products {
-    id: number,
-    title: string,
-    count: number,
+    readonly id: number;
+    title: string;
+    count: number;
     price: number
 }
 
@@ -16,9 +16,14 @@ const productObj: Products[] = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ]
 
-const res1 = productObj.filter((el) => {
-    return el.count > 10
-})
+function countProducts(productObj: Products[]): Products[] {
+    const res1 = productObj.filter((el) => {
+        return el.count > 10
+    })
+    return res1
+}
 
-console.log(res1);
+const res = countProducts(productObj)
+console.log(res);
+
 
