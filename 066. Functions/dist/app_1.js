@@ -8,10 +8,16 @@ const productObj = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
 function countProducts(productObj) {
-    const res1 = productObj.filter((el) => {
-        return el.count > 10;
+    // const res1 = productObj.filter((el) => {
+    //     return el.count > 10
+    // })
+    // return res1
+    let newArr = [];
+    productObj.forEach((el) => {
+        if (el.count > 10)
+            newArr.push(el);
     });
-    return res1;
+    return newArr;
 }
 const res = countProducts(productObj);
 console.log(res);

@@ -17,10 +17,15 @@ const productObj: Products[] = [
 ]
 
 function countProducts(productObj: Products[]): Products[] {
-    const res1 = productObj.filter((el) => {
-        return el.count > 10
+    // const res1 = productObj.filter((el) => {
+    //     return el.count > 10
+    // })
+    // return res1
+    let newArr = []
+    productObj.forEach((el) => {
+       if (el.count > 10) newArr.push(el)
     })
-    return res1
+    return newArr
 }
 
 const res = countProducts(productObj)
