@@ -16,11 +16,19 @@ const productObj5: Products[] = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ]
 
+// function findMax(productObj5: Products[]): Products {
+//     let max = productObj5[0]
+//     for (let i = 0; i < productObj5.length; i++) {
+//         if (productObj5[i].price > max.price) max = productObj5[i]
+//     }
+//     return max
+// }
+
 function findMax(productObj5: Products[]): Products {
     let max = productObj5[0]
-    for (let i = 0; i < productObj5.length; i++) {
-        if (productObj5[i].price > max.price) max = productObj5[i]
-    }
+    productObj5.forEach((el) => {
+        if (el.price > max.price) max = el
+    })
     return max
 }
 
