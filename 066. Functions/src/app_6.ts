@@ -28,5 +28,3 @@ const avgPrice = (productObj6: Products[]): number => productObj6.reduce((sum: n
 
 const res6 = avgPrice(productObj6)
 console.log(res6);
-
-

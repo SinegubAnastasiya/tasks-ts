@@ -14,8 +14,6 @@ const productObj6 = [
 //     }
 //     return avg / productObj6.length
 // }
-function avgPrice(productObj6) {
-    return productObj6.reduce((sum, el) => sum + el.price, 0) / productObj6.length;
-}
+const avgPrice = (productObj6) => productObj6.reduce((sum, el) => sum + el.price, 0) / productObj6.length;
 const res6 = avgPrice(productObj6);
 console.log(res6);
