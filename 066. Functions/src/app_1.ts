@@ -16,7 +16,7 @@ const productObj: Products[] = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ]
 
-function countProducts(productObj: Products[]): Products[] {
+const countProducts = (productObj: Products[]): Products[] => {
     // const res1 = productObj.filter((el) => {
     //     return el.count > 10
     // })

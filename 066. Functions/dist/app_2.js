@@ -7,8 +7,6 @@ const productObj2 = [
     { id: 4, title: 'Ноутбук', count: 13, price: 3000 },
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
-function reverseProducts(productObj2) {
-    return productObj2.reverse();
-}
+const reverseProducts = (productObj2) => productObj2.reverse();
 const res2 = reverseProducts(productObj2);
 console.log(res2);
