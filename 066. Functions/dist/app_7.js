@@ -7,13 +7,20 @@ const productObj7 = [
     { id: 4, title: 'Ноутбук', count: 13, price: 3000 },
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
-function findMax(productObj7) {
+// function findMax(productObj7: Products[]): Products {
+//     let maxPriceObj = productObj7[0]
+//     productObj7.forEach((el) => {
+//         if (el.price * el.count > maxPriceObj.price * maxPriceObj.count) maxPriceObj = el
+//     })
+//     return maxPriceObj
+// }
+const findMax1 = (productObj7) => {
     let maxPriceObj = productObj7[0];
     productObj7.forEach((el) => {
         if (el.price * el.count > maxPriceObj.price * maxPriceObj.count)
             maxPriceObj = el;
     });
     return maxPriceObj;
-}
-const res7 = findMax(productObj7);
+};
+const res7 = findMax1(productObj7);
 console.log(res7);
