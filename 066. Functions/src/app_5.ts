@@ -24,7 +24,7 @@ const productObj5: Products[] = [
 //     return max
 // }
 
-function findMax(productObj5: Products[]): Products {
+const findMax = (productObj5: Products[]): Products => {
     let max = productObj5[0]
     productObj5.forEach((el) => {
         if (el.price > max.price) max = el

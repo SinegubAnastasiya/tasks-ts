@@ -25,4 +25,3 @@ function doObj(arr9: Params[]): objParams {
 const res9 = doObj(arr9)
 console.log(res9);
 
-

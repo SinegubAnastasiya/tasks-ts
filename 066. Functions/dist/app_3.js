@@ -8,9 +8,6 @@ const productObj3 = [
     { id: 4, title: 'Ноутбук', count: 13, price: 3000 },
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
-function getProd(productObj3) {
-    const res2 = productObj3.filter((el) => el.count % 3 == 0);
-    return res2;
-}
+const getProd = (productObj3) => productObj3.filter((el) => el.count % 3 == 0);
 const res3 = getProd(productObj3);
 console.log(res3);

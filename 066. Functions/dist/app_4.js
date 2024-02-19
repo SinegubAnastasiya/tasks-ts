@@ -8,11 +8,6 @@ const productObj4 = [
     { id: 4, title: 'Ноутбук', count: 13, price: 3000 },
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
-function getPrice(productObj4) {
-    const res3 = productObj4.reduce((sum, el) => {
-        return sum += el.count * el.price;
-    }, 0);
-    return res3;
-}
+const getPrice = (productObj4) => productObj4.reduce((sum, el) => sum += el.count * el.price, 0);
 const res4 = getPrice(productObj4);
 console.log(res4);

@@ -14,13 +14,13 @@ const productObj5 = [
 //     }
 //     return max
 // }
-function findMax(productObj5) {
+const findMax = (productObj5) => {
     let max = productObj5[0];
     productObj5.forEach((el) => {
         if (el.price > max.price)
             max = el;
     });
     return max;
-}
+};
 const res5 = findMax(productObj5);
 console.log(res5);
