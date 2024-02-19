@@ -16,9 +16,7 @@ const productObj2: Products[] = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ]
 
-function reverseProducts(productObj2: Products[]): Products[] {
-    return productObj2.reverse()
-}
+const reverseProducts = (productObj2: Products[]): Products[] => productObj2.reverse()
 
 const res2 = reverseProducts(productObj2)
 console.log(res2);
