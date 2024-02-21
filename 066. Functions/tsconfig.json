@@ -4,5 +4,5 @@
       "target": "ES2022",
       "module": "CommonJS"
     },
-    "include": ["src/**/*.ts"]
+    "include": ["src/**/*.ts", "src/app_10.ts"]
 }
