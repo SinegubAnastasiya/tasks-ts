@@ -15,4 +15,4 @@ class Student extends University {
     }
 }
 const student = new Student();
-console.log(student.getStudentById(2));
+console.log(student.getStudentById(5));
