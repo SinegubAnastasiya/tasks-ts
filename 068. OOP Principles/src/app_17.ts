@@ -5,3 +5,28 @@
 // Реализуйте метод play для каждого класса, воспроизводя соответствующий звук
 // инструмента. Создайте несколько объектов классов Guitar, Piano и Drums и
 // вызовите метод play для каждого инструмента.
+
+abstract class MusicalInstrument {
+    abstract play(): void
+}
+
+class Guitar extends MusicalInstrument {
+    play = () => console.log('soundGuitar');
+}
+
+class Piano extends MusicalInstrument {
+    play = () => console.log('soundPiano');
+}
+
+class Drums extends MusicalInstrument {
+    play = () => console.log('soundDrums');
+}
+
+const guitar = new Guitar()
+guitar.play()
+
+const piano = new Piano()
+piano.play()
+
+const drums = new Drums()
+drums.play()

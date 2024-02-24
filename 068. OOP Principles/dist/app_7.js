@@ -15,11 +15,14 @@ class StringManipulator {
     countVowels() {
         const vowels = ['a', 'o', 'e', 'i', 'u'];
         let count = 0;
-        for (let i = 0; i < this.str.length; i++) {
-            if (vowels.includes(this.str[i]))
+        const res = this.str.split('').filter((el) => {
+            if (vowels.includes(el))
                 count++;
-        }
-        console.log(count);
+        });
+        // for (let i = 0; i < this.str.length; i++) {
+        //     if (vowels.includes(this.str[i])) count++
+        // }
+        console.log(res);
     }
 }
 const stringManipulator = new StringManipulator('striiiiiiiirts');

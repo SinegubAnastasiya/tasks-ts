@@ -4,13 +4,19 @@
 // Использовать Generics
 class PasswordGenerator {
     letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789_-!@?*+=';
-    generatePassword(len) {
+    len;
+    setPwdLength(len) {
+        if (typeof len == 'number')
+            this.len = len;
+    }
+    generatePassword() {
         let password = '';
-        for (let i = 0; i < len; i++) {
+        for (let i = 0; i < this.len; i++) {
             password += this.letters.charAt(Math.floor(Math.random() * this.letters.length));
         }
         console.log(password);
     }
 }
 const passwordGenerator = new PasswordGenerator();
-passwordGenerator.generatePassword(8);
+passwordGenerator.setPwdLength(8);
+console.log(passwordGenerator.generatePassword());

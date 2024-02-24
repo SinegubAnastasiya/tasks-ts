@@ -20,10 +20,13 @@ class StringManipulator {
     countVowels () {
         const vowels: string[] = ['a', 'o', 'e', 'i', 'u']
         let count: number = 0
-        for (let i = 0; i < this.str.length; i++) {
-            if (vowels.includes(this.str[i])) count++
-        }
-        console.log(count);
+        const res = this.str.split('').filter((el) => {
+            if (vowels.includes(el)) count++
+        })
+        // for (let i = 0; i < this.str.length; i++) {
+        //     if (vowels.includes(this.str[i])) count++
+        // }
+        console.log(res);
     }
 }
 
