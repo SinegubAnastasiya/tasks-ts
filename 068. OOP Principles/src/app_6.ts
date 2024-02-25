@@ -10,9 +10,7 @@ class ArrayAnalyzer {
         this.numsArray = array
     }
 
-    getAverage () {
-        return this.numsArray.reduce((sum, el) => (sum + el) / this.numsArray.length, 0)
-    }
+    getAverage = () => this.numsArray.reduce((sum, el) => (sum + el) / this.numsArray.length, 0)
 
     getMax () {
         // let max = 0

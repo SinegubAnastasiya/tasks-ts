@@ -20,9 +20,8 @@ class Student extends University {
         {id: 3, name: 'name3', surname: 'surname3'},
         {id: 4, name: 'name4', surname: 'surname4'}
     ]
-    getStudentById(id: number) {
-        return this.students.filter((el) => el.id == id)
-    }
+    
+    getStudentById = (id: number) => this.students.filter((el) => el.id == id)
 }
 
 const student = new Student()

@@ -7,9 +7,7 @@
 class Counter {
     count: number
 
-    setCount (count: number) {
-        this.count = count
-    }
+    setCount = (count: number) => this.count = count
 
     increment = () => ++this.count
 

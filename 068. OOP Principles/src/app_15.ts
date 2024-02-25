@@ -4,9 +4,9 @@
 // объектов класса Cat и выведите их данные.
 
 class Cats {
-    private name: string = 'Glory'
+    private name: string = 'Gloriya'
     private age: number = 10
-    private color: string = 'grey'
+    private color: string = 'black'
 
     getName = () => this.name;
 

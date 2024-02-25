@@ -8,21 +8,15 @@ class Person {
     name: string
     age: number
 
-    setName (name: string) {
-        this.name = name
-    }
+    setName = (name: string) => this.name = name
 
-    setAge (age: number) {
-        this.age = age
-    }
+    setAge = (age: number) => this.age = age
 }
 
 class Student16 extends Person {
     averageGrade: number
 
-    setAverageGrade (averageGrade: number) {
-        this.averageGrade = averageGrade
-    }
+    setAverageGrade = (averageGrade: number) => this.averageGrade = averageGrade
 
     getName = () => this.name
     getAge = () => this.age
